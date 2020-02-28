@@ -29,6 +29,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+Client-side routing has a few key advantages of server-side routing. The key one is that client-side routing prevents the browser from fully refreshing the entire page, and only loads components as necessary. It allows us to only update the parts of the page that we need to update, instead of requesting everything even if other elements don't need to be updated. With client-side routing, the necessary data is loaded on the initial page load. It can take a little longer than if we were loading a server-routed page, but you only have to load a client-sided page once, as opposed to every time you click on a link on a server-routed page. This will make the SPA feel more responsive to users, since users won't have to wait for the data to be transferred per-request. Since client-sided routing also avoids unnecessarily reloading elements, less bandwidth is used, which makes it more friendly to mobile users. 
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
