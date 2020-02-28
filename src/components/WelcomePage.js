@@ -1,11 +1,17 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import styled from 'styled-components';
+
+const Header = styled.header`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;`;
 
 export default function WelcomePage() {
   return (
     <section className="welcome-page">
-      <header>
-        <h1>Welcome to the ultimate fan site!</h1>
+      <Header>
         <Link to = '/characters'>
         <img
           className="main-img"
@@ -14,7 +20,7 @@ export default function WelcomePage() {
         />
         </Link>
         <p>Click on Rick!</p>
-      </header>
+      </Header>
     </section>
   );
 }

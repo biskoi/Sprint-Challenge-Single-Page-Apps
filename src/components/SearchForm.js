@@ -8,7 +8,7 @@ function SearchForm(props) {
 
     <Form>
       <label htmlFor = 'search'>
-        Search
+        Search by Name
         <Field name = 'search' placeholder = 'Enter a search term'/>
       </label>
     </Form>
