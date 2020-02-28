@@ -44,7 +44,9 @@ export default function CharacterList() {
       <SearchForm setQuery = {setQuery} query = {query}/>
       <Flexbox>
       {characters.map(item => (
+        <Link to = {`/characters/${item.id}`}>
       <CharacterCard char = {item}/>
+        </Link>
       ))}
       </Flexbox>
     </Section>

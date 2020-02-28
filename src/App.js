@@ -14,6 +14,7 @@ export default function App(props) {
       <Navbar/>
       <Jumbotron/>
       <Switch>
+        {/* <Route path = '/characters/:charID' component = {CharacterCard}/> */}
         <Route path = '/characters' component = {CharacterList}/>
         <Route path = '/' component = {WelcomePage}/>
       </Switch>

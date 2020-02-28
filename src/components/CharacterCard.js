@@ -4,12 +4,15 @@ import {
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import styled from 'styled-components';
+import {useParams} from 'react-router-dom';
 
 const Card = styled(strapCard)`
 display: flex;
 flex-direction: column;
 border: solid black 2px;
 margin: 3%;
+text-decoration: none;
+color: black;
 `;
 
 const CardImg = styled(strapImg)`
@@ -20,6 +23,8 @@ width: 100%;
 
 
 export default function CharacterCard(props) {
+
+  const {charID} = useParams();
 
   return (
     <Card>
